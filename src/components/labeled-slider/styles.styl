@@ -1,0 +1,44 @@
+thumb(w, h, r, c, bg)
+  box-shadow: 0.2em 0.2em 0.1em #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid c;
+  height: h;
+  width: w;
+  border-radius: r;
+  background: bg;
+  cursor: pointer;
+
+track(h, a, sw, c, bg, r)
+  width: 100%;
+  height: h;
+  cursor: pointer;
+  animate: a;
+  box-shadow: sw c;
+  background: bg;
+  border-radius: r;
+  border: 0.1em solid c;
+
+
+thumbStyles() 
+  thumb 1em 2em 0.5em '#00f' '#fff'
+
+.labeledSlider input[type=range]::-webkit-slider-thumb
+  -webkit-appearance: none
+  thumbStyles()
+  margin-top 2em
+  
+.labeledSlider input[type=range]::-moz-range-thumb
+  thumbStyles()
+
+trackBg = #3071a9
+
+trackStyles()
+  track 1em 0.2s 0.1em #000 trackBg 0.6em
+
+.labeledSlider input[type=range]::-webkit-slider-runnable-track
+  trackStyles()
+
+.labeledSlider input[type=range]:focus::-webkit-slider-runnable-track
+  background trackBg
+
+.labeledSlider input[type=range]::-moz-range-track
+  trackStyles()

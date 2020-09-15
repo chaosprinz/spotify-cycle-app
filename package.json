@@ -1,0 +1,31 @@
+{
+  "name": "spotify-cycle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@cycle/dom": "22.4.0",
+    "@cycle/isolate": "5.2.0",
+    "@cycle/run": "5.4.0",
+    "p5": "0.10.2",
+    "ramda": "0.26.1",
+    "socket.io-client": "2.3.0",
+    "xstream": "11.11.0"
+  },
+  "devDependencies": {
+    "@types/p5": "0.9.0",
+    "@types/css-loader": "latest",
+    "@types/ramda": "0.26.38",
+    "@types/socket.io-client": "1.4.32",
+    "@types/stylus": "0.48.31",
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1",
+    "stylus": "0.54.7",
+    "css-modules": "0.3.0"
+  },
+  "keywords": []
+}

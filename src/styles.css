@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 45% 45%;
+}
+
+.main header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-bottom: 1em;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+  margin: 0.9em;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #3071a9;
+}
+
+.bmi-calculator {
+  background-color: #bbbbee;
+  padding: 0.2em 2em 0.2em 1em;
+  border-radius: 0.4em;
+  box-shadow: 0.3em 0.3em 0.1em #160176;
+  width: 25em;
+}
+
+.bmi-calculator label {
+  display: block;
+  font-size: 1em;
+}
